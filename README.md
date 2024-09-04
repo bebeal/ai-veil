@@ -61,7 +61,7 @@ Across all modalities, adversarial models aim to find minimal/unique perturbatio
     - Obvuiosuly requires knowledge of the target model structure
     - Attacks specifically designed for CNNs vs. Transformers
     - Exploiting quirks in activation functions
-    - Exploiting rounding errors in floating-point calculations
+    - Exploiting rounding/quantization attacks involving floating-point calculations
 - Training/Dataset Specific Attacks
     - explore possible attacks based on mathematical exploits of loss functions
     - explore subliminal information injection via gradient injection (brainwash)
