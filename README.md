@@ -62,5 +62,15 @@ Across all modalities, adversarial models aim to find minimal/unique perturbatio
     - Windows-specific exploits for models deployed on Windows servers
     - Attacks targeting specific GPU vulnerabilities
     - Exploiting containerization or virtualization weaknesses
+- Bot-Bamboozle Attacks
+    - Exploring methods to deceive systems into misclassifying human interactions as bot-generated
+    - Exploring methods to force bots to self expose via manipulated input injection
+    - Analyzing patterns heuristic-based vs gradient-based bot behavior
+    - Developing techniques to mimic these patterns in human-generated content
+    - Review and Test against heuristic-based and SOTA gradient-based detection systems
+    - Iterative processes which bolsters bot detection overtime via behavioral analysis tools and data feedback 
 
+## Next Steps
+
+- Hope? Cope? Komm, süßer Tod?
 
