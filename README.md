@@ -80,7 +80,14 @@ Across all modalities, adversarial models aim to find minimal/unique perturbatio
     - Analyzing patterns heuristic-based vs gradient-based bot behavior
     - Developing techniques to mimic these patterns in human-generated content
     - Review and Test against heuristic-based and SOTA gradient-based detection systems
-    - Iterative processes which bolsters bot detection overtime via behavioral analysis tools and data feedback 
+    - Iterative processes which bolsters bot detection overtime via behavioral analysis tools and data feedback
+
+ ## IRL
+
+ - irl diving/jacking in/netrunning
+ - Think retroreflective materials that disrupt flash photography: The material used is typically made of tiny glass beads or prismatic reflectors embedded in fabric. When a camera flash hits this material, it reflects the light intensely back to the camera (retroreflection), often causing egregious overexposure
+ - ![anti-papparazi](https://github.com/user-attachments/assets/77ac6c40-da22-47dc-8b86-bfb94eb20f9d)
+
 
 ## Next Steps
 
