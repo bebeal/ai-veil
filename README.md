@@ -39,7 +39,19 @@ Across all modalities, adversarial models aim to find minimal/unique perturbatio
 - Create coordinated attacks across multiple data types
 - Examples: Audio-visual perturbations, text-image misalignments
 
-## Attack Vectors To Explore
+## Experiment Setup
+
+### Analyze How Adversarial Training Scales
+
+- Under the assumption that both models start with equivalent priors and are placed in the same environment and trained on the same quantity and comparable quality/magnitude of data
+
+- Attack generation
+- Defense implementation
+- Re-Evaluate
+- Refine
+- Re-Iterate
+
+### Attack Vectors To Explore
 
 - General Highest Level Abstraction Attacks
     - Most widely applicable exploiting common vulnerabilities in gradient based neural net models
