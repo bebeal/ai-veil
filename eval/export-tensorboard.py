@@ -121,7 +121,7 @@ for model_idx, model in enumerate(sorted_models):
 
 # legend and cutoff dataset names
 simplified_names = [model.split(".")[0].replace("_", " ") for model in sorted_models]
-legend_elements = [plt.Rectangle((0,0),1,1, fc=gradient_colors(i/len(sorted_models))) for i in range(len(sorted_models))]
+legend_elements = [plt.Rectangle((0,0),1,1, fc=gradient_colors(i/(len(sorted_models)-1))) for i in range(len(sorted_models))]
 legend = ax.legend(legend_elements, simplified_names, loc='lower center', 
                    bbox_to_anchor=(0.5, -0.20), ncol=2,
                    frameon=False, labelcolor='white', prop=font_properties,
