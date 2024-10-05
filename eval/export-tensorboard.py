@@ -48,7 +48,7 @@ models_to_evaluate = [
 tags = ["accuracy/val", "accuracy/train"]
 data_buckets = {model: {tag: [] for tag in tags} for model in models_to_evaluate}
 
-root_log_dirs = ["./archive/eval_base_imagenet2012_val", "./archive/eval_base_imagenet2012_train"]
+root_log_dirs = ["./eval/archive/eval_base_imagenet2012_val", "./eval/archive/eval_base_imagenet2012_train"]
 
 tfevents = []
 for root_log_dir in root_log_dirs:
@@ -124,7 +124,8 @@ simplified_names = [model.split(".")[0].replace("_", " ") for model in sorted_mo
 legend_elements = [plt.Rectangle((0,0),1,1, fc=gradient_colors(i/len(sorted_models))) for i in range(len(sorted_models))]
 legend = ax.legend(legend_elements, simplified_names, loc='lower center', 
                    bbox_to_anchor=(0.5, -0.20), ncol=2,
-                   frameon=False, labelcolor='white', prop=font_properties)
+                   frameon=False, labelcolor='white', prop=font_properties,
+                   handlelength=2, handleheight=2)
 plt.setp(legend.get_texts(), fontsize=18)
 
 # Stats
@@ -155,7 +156,7 @@ ax.text(0.5, 0.5, formatted_text, fontsize=14, fontweight='bold', color='white',
         transform=ax.transAxes, fontproperties=font_properties)
 
 # title and labels
-fig.suptitle('Vision Benchmarks\nImageNet 2012 train/val Accuracy', fontsize=20, fontweight='bold', color='white', y=1.0)
+fig.suptitle('Baseline Model Evaluation\nImageNet 2012 Accuracy (train/val)', fontsize=20, fontweight='bold', color='white', y=1.0)
 ax.set_ylabel('Accuracy (%)', fontsize=20, fontweight='bold', color='white', fontproperties=font_properties)
 ax.set_ylim(80, 100)
 ax.set_yticks(np.arange(80, 101, 5))
@@ -172,7 +173,7 @@ fig.subplots_adjust(bottom=0.2)
 
 # Save and close the plot
 plt.tight_layout()
-plt.savefig("base_imagenet2012_comparison.png", dpi=900, bbox_inches='tight', facecolor='#1E1E1E')
+plt.savefig("./plots/base_imagenet2012_comparison.png", dpi=900, bbox_inches='tight', facecolor='#1E1E1E')
 plt.close()
 
 print("Revised plot saved as: base_imagenet2012_comparison.png")
